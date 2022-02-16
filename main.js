@@ -4,7 +4,7 @@
 
 const userRelatedNounArray = ["mother","father","dog","cat","daughter","son","second cousin twice removed","brother","sister","ferret","velociraptor","unladen swallow"];
 const insultAdjectiveArray = [["detestable","a"],["worthless","a"],["miserable","a"],["pathetic","a"],["unlovable","an"],["unapologetic","an"],["complete","a"],["total","a"],["rude","a"],["ugly","a"],["fat","a"],["stupid","a"]];
-const insultNounArray = ["idiot","moron","scoundrel","knave","cur","bastard","vagabond","lowlife","pig","hampster","cow","ignoramus"]; //The second element of each item array specifies whether to use 'an' or 'a' -- grammatical correctness is important!
+const insultNounArray = ["idiot","moron","scoundrel","knave","cur","bastard","vagabond","lowlife","pig","cow","ignoramus"]; //The second element of each item array specifies whether to use 'an' or 'a' -- grammatical correctness is important!
 
 
 function insult(){
@@ -17,4 +17,8 @@ function insult(){
     return("Your " + firstNoun + " is " + particle + " " + adjective + " " + secondNoun + "!")
 }
 
-document.getElementById("insultElem").innerHTML = insult()
+function updateBlockQuote(){
+    document.getElementById("insultElem").innerHTML = insult()
+}
+
+document.getElementById("insultButton").addEventListener("click",updateBlockQuote)
