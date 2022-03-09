@@ -3,17 +3,71 @@
 <html>
 <head>
     <title>Evan.com</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-    
+    <div id="top"></div>
     <header>
-        <h1>Welcome To Evan's Corner of the Internet</h1>
+        <h1 id="page-title">Welcome To Evan's Corner of the Internet</h1>
         <h2 id="subtitle">More things being added all the sometimes</h2>
-        <hr class = "short-hr">
+        <div class="header-hr-divider"><hr></div>
+        <nav>
+            <ul id="">
+                <li><a href="#top">Back to Top</a></li>
+                <li><a href="#footer">Down to Footer</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <table>
+
+        <h3>Here are a list of some of my works thus far</h3>
+        <a href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank">
+            <div id="galaxy-image-container">
+                
+                    <article id="h-e-article">
+
+                        <h4 class = "humanity-endures">Humanity Endures</h4>
+                        <p class = "humanity-endures">I wrote a book. A 300,000 word book. It is a science-fiction epic about humanity struggling to survive a catastrophic threat to its existence, as well as the internal strife that such a threat brings to the surface. It turned out to be surprisingly relevant, and its quality is actually OK I think. I even got on the news for it!</p>
+                        <p class = "end-link humanity-endures">Click on this box to see its Amazon page</p>
+                        
+
+                    </article>
+                
+            </div>
+        </a>
+        
+        <div class="small-hr-divider"><hr></div>
+
+        <a href="https://github.com/e-p-armstrong?tab=repositories" target="_blank">
+            <div id="code-image-container">
+                <article id="github-article">
+                    
+                    <h4 class = "github">Github</h4>
+                    <p class="github">I've been contributing random projects (as well as things that I did at the behest of courses like codecademy) to Github for a bit now, and I've even uploaded a bunch of the code I did for previous personal projects, like when I was reading/working through the Haskellbook[1] and got a good distance into it.</p>
+                    <p class = "end-link github">You can find a bunch of neat little things, like insult generators and ciphers here. Click the box!</p>
+                    <p class= "addendum github">(And rest assured, as time goes on and as I learn more, the things will become a lot less little and a lot more neat.)</p>
+                    <br>
+
+                </article>
+            </div>
+        </a>
+        <div class="med-hr-divider"><hr></div>
+
+            <article id="distinguished-individual-article">
+                <div class="article-title-and-sub">
+                    <h4 class="">Distinguished Individual</h4>
+                    <p>(Where I pick someone notable in the world and honor them)</p>
+                </div>
+                <h5>Vlodymyr Zelenskyy</h5>
+                <img id="distinguished-individual-portrait" src="./resources/images/Zelenskyy.jpg" alt="Ukraine's Badass President">
+                <div class="small-hr-divider"><hr></div>
+                <p class="distinguished-individual">For reasons that we're all aware of, this guy is the definition of badass. Slava Ukraine!</p>
+
+
+            </article>
+
+        
+        <!-- <table>
                 
             <h3>Here are a list of some of my works thus far</h3>
             <tr>
@@ -29,7 +83,7 @@
                     </div>
                 </td>
                 <td>
-                    <aside> <!--Where I will write my current thought of the day-->
+                    <aside>
                         <hr>
                         <p>Thoughts at present: right now the world is scary and I'm burying my head in code (and VNs) to escape from it.</p>
                         <br>
@@ -58,11 +112,25 @@
                 </td>
             </tr>
 
-        </table>
+        </table> -->
     </main>
+    <aside>
+            <hr>
+            <p>Thoughts about the world at present:</p>
+            <p id="thoughts">"AHHHHHHHHHHHHHHHH"</p>
+            <br>
+            <p>Also, feel free to click the button below and get insulted, courtesy of my random insult generator (which I have attached to this site)</p>
+            <button id="insultButton">Click for a random insult</button>
+            <br> <br>
+            <blockquote id="insultElem">Insult appears here</blockquote>
+
+        </div>
+    </aside>
     
-    
-    <footer>
+    <footer id="footer">
+        <hr>
+        <h4 id="references-title">References:</h4>
+        <p>[1]<a href="https://haskellbook.com/" target="_blank">Haskellbook</a></p>
         <hr>
         <p>contact: evanpeterarmstrong@gmail.com</p>
         <br>
