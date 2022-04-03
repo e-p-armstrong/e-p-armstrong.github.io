@@ -1,0 +1,87 @@
+/* main column count override */
+
+main{
+    grid-template-columns: repeat(4,25%);
+    padding: 25px;
+    background-color: #101010;
+    width: 78vw;
+    /* min-width:200px; */
+    margin:0 auto;
+    border: 0px solid white;
+    display: grid;
+    /* grid-template-columns: repeat(3,33.3%); */
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: stretch;
+    gap: 0 10px;
+}
+
+/* New Grid Default Classes */
+.left-three-c{
+    grid-column: 1 / span 3;
+}
+
+.right-one-c{
+    grid-column: 4 / span 1;
+}
+
+.right-two-c{
+    grid-column: 3 / span 2;
+}
+
+.right-three-c{
+    grid-column: 2 / span 3;
+}
+
+.left-two-span-one{
+    grid-column: 2 / span 1;
+}
+
+.center-two{
+    grid-column: 2 / span 2;
+}
+
+.right-one-span-one{
+    grid-column: 3 / span 1;
+}
+
+.all-c{
+    grid-column: 1 / span 4;
+}
+
+/* Restating the media query rules, because they weren't working on this page for some reason */
+@media only screen and (max-width: 1000px){
+    main{
+        width: 100%;
+    }
+    header h1{
+        font-size: 1.5em;
+        /* margin: 1vw auto; */
+        /* align-self: center; */
+    }
+    /* actually looks ugly, keep default font-size as it is, people can just have less on their screen b ut at least they won't have to get eyestrain. 
+    body{
+        font-size: 14px;
+    } */
+}
+
+@media only screen and (max-height: 1100px){
+    header{
+       padding-top: 20px;
+    }
+    header h1{
+        font-size: 1.5em;
+        /* margin: 1vw auto; */
+        /* align-self: center; */
+    }
+}
+
+@media only screen and (max-width: 450px){
+    header h1{
+        font-size: 1em;
+    }
+    nav{
+        font-size: 0.75em;
+    }
+}

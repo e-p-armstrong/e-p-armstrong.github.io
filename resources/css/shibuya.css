@@ -401,6 +401,10 @@ main section{
     grid-column: 2 / span 1;
 }
 
+.all-c{
+    grid-column: 1 / span 3;
+}
+
 .two-rows{
     grid-row: span 2;
 }
