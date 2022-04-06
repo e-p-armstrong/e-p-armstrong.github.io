@@ -22,3 +22,5 @@ function updateBlockQuote(){
 }
 
 document.getElementById("insultButton").addEventListener("click",updateBlockQuote)
+
+console.log("hi")

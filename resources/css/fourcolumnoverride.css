@@ -1,5 +1,8 @@
 /* main column count override */
+/* Meant to be linked to after the main Shibuya;Classic stylesheet, to override <main>'s grid structure*/
+/* Consider making a whole over version (with the rest of the code copied over) of the Shibuya stylesheet, instead of a taped-on (if elegant) override. Though that would mean having to make the same change to both stylesheets every time I make a non-grid change */
 
+/* Find out why the padding considers the edges of the pages and is all nice and even on the demo page but not here with the four column override. That's a good mystery. */
 main{
     grid-template-columns: repeat(4,25%);
     padding: 25px;
@@ -17,38 +20,49 @@ main{
     gap: 0 10px;
 }
 
-/* New Grid Default Classes */
+/* New Grid Default Classes (YOU PROBABLY WON'T WANT TO USE THE COLUMN-RELATED ONES THAT APPEAR IN THE REGULAR STYLESHEET*/
+/* the classes that arrange elements to take up only one column in the two left ones or the two right ones are named relative to the center. "Near left c" is the second of four columns, as it is the left column nearest the center. "Far left c" is the first column, the one furthest to the left from the center.*/
 .left-three-c{
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 3 !important;
 }
 
-.right-one-c{
-    grid-column: 4 / span 1;
+.left-two-c{
+    grid-column: 1 / span 2 !important;
 }
 
-.right-two-c{
-    grid-column: 3 / span 2;
+.far-left-c{
+    grid-column: 1 / span 1;
+}
+
+.near-left-c{
+    grid-column: 2 / span 1 !important;
 }
 
 .right-three-c{
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 3 !important;
 }
 
-.left-two-span-one{
-    grid-column: 2 / span 1;
+.right-two-c{
+    grid-column: 3 / span 2 !important;
 }
 
-.center-two{
-    grid-column: 2 / span 2;
+.far-right-c{
+    grid-column: 4 / span 1 !important;
 }
 
-.right-one-span-one{
-    grid-column: 3 / span 1;
+.near-right-c{
+    grid-column: 3 / span 1 !important;
+}
+
+.center-two-c{
+    grid-column: 2 / span 2 !important;
 }
 
 .all-c{
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 4 !important;
 }
+
+
 
 /* Restating the media query rules, because they weren't working on this page for some reason */
 @media only screen and (max-width: 1000px){
@@ -74,6 +88,45 @@ main{
         font-size: 1.5em;
         /* margin: 1vw auto; */
         /* align-self: center; */
+    }
+}
+
+/* Converts to a two-column layout, because four-columns is illegible on small screens */
+@media only screen and (max-width: 650px){
+    main{
+        grid-template-columns: repeat(2,50%);
+        padding: 25px 40px 25px 20px;
+    }
+    .far-left-c{
+        grid-column: 1 / span 1 !important;
+    }
+    .near-left-c{
+        grid-column: 2 / span 1 !important;
+    }
+    .near-right-c{
+        grid-column: 1 / span 1 !important;
+    }
+    .far-right-c{
+        grid-column: 2 / span 1 !important;
+    }
+    /* Make all things that take up two or more columns take up the full width of <main> */
+    .left-two-c{
+        grid-column: 1 / span 2 !important;
+    }
+    .right-two-c{
+        grid-column: 1 / span 2 !important;
+    }
+    .center-two-c{
+        grid-column: 1 / span 2 !important;
+    }
+    .left-three-c{
+        grid-column: 1 / span 2 !important;
+    }
+    .right-three-c{
+        grid-column: 1 / span 2 !important;
+    }
+    .all-c{
+        grid-column: 1 / span 2 !important;
     }
 }
 

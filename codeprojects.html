@@ -21,10 +21,19 @@
          </ul>
     </nav>
     <main>
-        <article class="left-one-c">
-            <h3>A Caesar Cipher</h3>
-            <p>This one is pretty self-explanatory. I made a Caesar Cipher class that lets you create an object with a given shift, and this object has methods that let you encrypt and decrypt text at will. Here in this box, you have an input field attached to an instance of this class which has the classic shift of "13". Try encrypting and decrypting any messages you want!</p>
+        <!-- Now that every single one of my originally worthless, quickly-made, ramshackle projects has gotten a complete revamp (and with them actually becoming kinda cool as a result) I think it's safe to say that this page is in the Epsilon worldline. Just no infinite loops plz.-->
+        <!-- Kudos if you get the reference. -->
+        <article class="far-left-c">
+            <h3 id="testinginteract">A Caesar Cipher</h3>
+            <p>This one is pretty self-explanatory. I made a Caesar Cipher class that lets you create an object with a given shift, and this object has methods that let you encrypt and decrypt text at will. The version customized for this page lets you change the input, and handles/displays errors/bad inputs smoothly (try-catch). Try encrypting and decrypting any messages you want!</p>
             
+            <p>Your desired shift:</p>
+            <aside class="all-c">
+                <form action="codeprojects.html" method="post" id="cipher-shift-form">
+                    <input type="text" name="cipher-shift-I" id="cipher-shift-I" value="13">
+                </form>
+            </aside>
+            <p>Your desired message:</p>
             <aside class="all-c">
                 <form action="codeprojects.html" method="post" id="cipher-form">
                     <textarea id="cipher-I" name="cipher-I" rows="4" cols="20" >ATTACKATDAWN</textarea>
@@ -33,25 +42,25 @@
 
             
 
-            <a href="#" class="button-anchor left-one-c" id="encrypt"><div class="button">Encrypt it!</div></a>
-            <a href="#" class="button-anchor center-c" id="decrypt"><div class="button">Decrypt it!</div></a>
+            <a href="#" class="button center-c" id="encrypt">Encrypt it!</a>
+            <a href="#" class="button center-c" id="decrypt">Decrypt it!</a>
             
         </article>
-        <article class="left-two-span-one">
+        <article class="near-left-c">
             <h3>A Number Formatter</h3>
             <p>A neat little function that, relatively efficiently, takes a number, turns it into a string, and adds commas in the correct places such that it is transformed into a (you guessed it) formatted number (commas in-between every three characters). This thing even works with decimals.</p>
 
-            <p>Try it out by entering numbers in the box below!</p>
+            <p>Try it out by entering numbers in the box below! (Try it with decimals!)</p>
 
             <aside class="all-c">
                 <form action="codeprojects.html" method="post" id="formatter-form">
-                    <input type="text" name="formatter-I" id="formatter-I" value="1234.5">
+                    <input type="text" name="formatter-I" id="formatter-I" value="1048596">
                 </form>
             </aside>
-            <a href="#" class="button-anchor left-one-c" id="format"><div class="button">Format it!</div></a>
+            <a href="#" class="button" id="format">Format it!</a>
 
         </article>
-        <article class="right-one-span-one">
+        <article class="near-right-c">
             <h3>A Password Generator</h3>
             <p>Mashes together a bunch of random characters to make a somewhat secure password, probably. It uses Math.random though so it probably isn't cryptographically sound. I still can't imagine the things it produces would be easy to guess or brute force, however.</p>
 
@@ -60,25 +69,39 @@
             <aside class="all-c">
                 <p id="passGen-output">Output appears here</p>
             </aside>
-            <a href="#" class="button-anchor left-one-c" id="generate"><div class="button">Generate it!</div></a>
+            <a href="#" class="button" id="generate">Generate it!</a>
 
         </article>
-        <article class="right-one-c">
+        <article class="far-right-c">
+            <div>
             <h3>Credit Card Number Checker</h3>
-            <p>The outcome of a Codecademy "Challenge Project" -- it uses something called the Luhn Algorithm, I believe. Basically, this checks if an array of numbers follows a specific pattern, returns true if it does, and false if it does not.</p>
+            <h4>Luhn's Algorithm</h4>
+            </div>
+            <p>The outcome of a Codecademy "Challenge Project" -- it uses something called Luhn's Algorithm, which detects (most) typographical mistakes in important numbers. Basically, this checks if an array of numbers follows a specific pattern, returns true if it does, and false if it does not.</p>
 
-            <p>In this demo we're testing whether the number [5, 3, 8, 2, 0, 1, 9, 7, 7, 2, 8, 8, 3, 8, 5, 4] is valid:</p>
-
+            <p>Input any number you want!</p>
+            <aside class="all-c">
+                <form action="codeprojects.html" method="post" id="checker-form">
+                    <input type="text" name="checker-I" id="checker-I" value="4539677908016808">
+                </form>
+            </aside>
             <aside class="all-c">
                 <p id="checker-output">Output appears here</p>
             </aside>
-            <a href="#" class="button-anchor left-one-c" id="check"><div class="button">Check it!</div></a>
+            <a href="#" class="button" id="check">Check it!</a>
 
         </article>
-        <article class="center-two">
+        <article class="center-two-c">
+            <h3>The page you're looking at</h3>
+            <p>My largest progest so far is probably actually the stylesheet that governs the main page of this site (this page runs that stylesheet with a few quick additions). Its purpose is to display any page written with semantic HTML in a beautiful dark theme with well-structured content. It has everything from CSS Grid to pseudo-elements to media queries, and I believe it has unique rules for every single semantic tag (at least, all the ones in W3 schools' list). I'm pretty happy with it!</p>
+            <p>(Also, integrating all these programs with this page was a project in and of itself, which probably took more time than it took to write all of them. I improved them all a bunch during this process too.)</p>
+            <p>You can check out its Github page here:</p>
+            <a href="https://github.com/e-p-armstrong/Stylesheet-Shibuya-Classic" class="button" target="_blank">Click me!</a>
+        </article>
+        <article class="center-two-c">
             <h3>...And much more!</h3>
             <p>I know I sort-of mentioned this already, but my Github account exists, so you can see the latest in Evan Engineering there!</p>
-            <a href="https://github.com/e-p-armstrong?tab=repositories" target="_blank" class="button-anchor"><div class="button">Click me!</div></a>
+            <a href="https://github.com/e-p-armstrong?tab=repositories" target="_blank" class="button">Click me!</a>
         </article>
     </main>
     <footer id="bottom">
