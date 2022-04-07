@@ -573,7 +573,7 @@ footer ul{
 }
 
 .align-left{
-    margin:10px;
+    margin: 10px;
     text-align:left;
     grid-column: 1 / span 2;
     justify-self: left;
@@ -664,3 +664,41 @@ img{
     width:250px;
     margin: 0 auto;
 }
+
+.super-size{
+    font-size: 5em;
+}
+
+.slightly-less-super-size{
+    font-size: 4em;
+}
+
+.moderate-size{
+    font-size: 1.5em;
+}
+
+.stretch{
+    justify-self: stretch;
+}
+
+.more-margin-top{
+    margin-top: 10px;
+}
+
+li{
+    margin-top: 10px;
+}
+
+.align-self-start{
+    align-self: start;
+}
+
+.light{
+    font-weight: 400;
+}
+
+.shaded {
+    color: #777; /*Makes the text in an element have the same color as an h6*/
+}
+
+/* Be sure to add main h1 to the list of things that get automatically all-c'd*/
