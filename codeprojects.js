@@ -19,7 +19,6 @@ let formatterValue = document.getElementById("formatter-form").elements["formatt
 document.getElementById("cipher-shift-form").addEventListener("submit", function(event){
 
     event.preventDefault()
-    console.log("this fired)")
     cipherI.focus();
     // window.getSelection().selectAllChildren(cipherI) For some reason, even though the text is selected, this will not allow one to delete the text with a single keystroke. You need to select the text manually. They keyboard thinks its typing into the entire webpage and not the textarea.
     
@@ -159,22 +158,32 @@ function generatePass(){ //Makes a password of length 20
 
 // Number Formatter Code
 function formatNumber(num){
+    let isNegative = false;
     if (isNaN(Number(num))){
         throw "Did not input a number"
     }
     const resultArray = []
     const splitAtPeriod = num.toString().split('.');
     const workingNumber = splitAtPeriod[0]
-    const endDigits = workingNumber.length % 3
     const workingNumberArray = workingNumber.split('')
+    if (workingNumberArray[0] === "-"){
+        isNegative = true;
+        workingNumberArray.shift()
+    }
+    
+    const endDigits = workingNumberArray.length % 3
+    
     if (endDigits !== 0){
         resultArray.push((workingNumberArray.splice(0,endDigits)).join(''))
     }
-    const timesToIterate = Math.floor(workingNumber.length / 3)
+    const timesToIterate = Math.floor(workingNumberArray.length / 3)
     for (let n=0; n < timesToIterate; n += 1){
         resultArray.push((workingNumberArray.splice(0,3)).join(''))
     }
     let resultString = resultArray.join()
+    if (isNegative){
+        resultString = '-' + resultString;
+    }
     return splitAtPeriod[1] ? resultString + '.' + splitAtPeriod[1] : resultString
 }
 
@@ -213,8 +222,6 @@ function validateCred(num){
         throw("this can only check numbers, not whatever the hell you're inputting!")
     }
     arr = String(num).split('').map(str => Number(str))
-    console.log(arr)
-
     let numCounter = 1; //Sees if the number being considered meets the criterion of "every OTHER number". ie, will be isEven()'d.
     let sumStorage = 0;
     while (arr.length > 0){
@@ -260,9 +267,7 @@ function decryptCipherValue(){
         if (typeof caesarShift !== "number" || isNaN(caesarShift)){
             throw("invalid shift inputted")
         }
-        console.log(caesarCipher.decrypt(cipherI.value))
-
-        document.getElementById("cipher-form").elements["cipher-I"].value = caesarCipher.decrypt(document.getElementById("cipher-form").elements["cipher-I"].value)//Tested, for some reason does not work if this exact value is stored in a constant or variable. Maybe this value can't be stored for some reason?
+        document.getElementById("cipher-form").elements["cipher-I"].value = caesarCipher.decrypt(cipherI.value)//Tested, for some reason does not work if this exact value is stored in a constant or variable. Maybe this value can't be stored for some reason?
     } catch (error) {
         document.getElementById("cipher-form").elements["cipher-I"].value = `error: ${error}`
     }

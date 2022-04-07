@@ -1,5 +1,5 @@
 /* main column count override */
-/* Meant to be linked to after the main Shibuya;Classic stylesheet, to override <main>'s grid structure*/
+/* Meant to be linked to after the main Shibuya;Classic stylesheet, to override <main>'s grid structure, if you want to have a four-column layout instead of a three-column one in the <main> tag.*/
 /* Consider making a whole over version (with the rest of the code copied over) of the Shibuya stylesheet, instead of a taped-on (if elegant) override. Though that would mean having to make the same change to both stylesheets every time I make a non-grid change */
 
 /* Find out why the padding considers the edges of the pages and is all nice and even on the demo page but not here with the four column override. That's a good mystery. */
