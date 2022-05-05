@@ -92,7 +92,7 @@ main{
 }
 
 /* Converts to a two-column layout, because four-columns is illegible on small screens */
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 750px){
     main{
         grid-template-columns: repeat(2,50%);
         padding: 25px 40px 25px 20px;

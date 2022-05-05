@@ -702,3 +702,11 @@ li{
 }
 
 /* Be sure to add main h1 to the list of things that get automatically all-c'd*/
+
+.header-subtitle{
+    text-align: center;
+    font-size: 0.75em;
+    padding-top: 5px;
+    font-style: italic;
+    color: #999;
+}
