@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'galaxy': "url('/')"
+      },
+      height: {
+        'half-screen': '50vh'
       }
     },
   },
