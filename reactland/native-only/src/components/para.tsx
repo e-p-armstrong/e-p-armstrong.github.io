@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 import classNames from "./class_names"
 
 interface Props {
-    children: ReactNode
+    children?: ReactNode
     className?: string
 }
 
