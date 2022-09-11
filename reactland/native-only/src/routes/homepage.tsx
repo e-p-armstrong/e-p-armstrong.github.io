@@ -6,7 +6,7 @@ import LinkButton from "../components/link_button"
 export default function Homepage () {
     return (
     <>
-        <div className="w-full bg-[url('/images/iconic.jpg')] bg-center bg-no-repeat flex items-center flex-col gap-3 h-half-screen">
+        <div className="w-full bg-[url('/images/iconic.jpg')] bg-center bg-cover bg-no-repeat flex items-center flex-col gap-3 h-half-screen">
             <div className="w-5/6 h-1/2 bg-black/60  m-auto rounded-md flex items-center flex-wrap shadow-md">
                 <h2 className="lg:text-3xl md:text-2xl sm:text-2xl text-xl text-white  mx-auto lg:grow-0 lg:shrink-0 w-3/4 h-fit text-center font-semibold">Author, Programmer, Aspiring World-Conquerer</h2>
             </div>
