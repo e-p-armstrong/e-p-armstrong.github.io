@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CodeProjects from './routes/codeprojects';
-import Slide from './routes/slide';
 import Homepage from './routes/homepage';
 import NotFound from './routes/notfound';
 
