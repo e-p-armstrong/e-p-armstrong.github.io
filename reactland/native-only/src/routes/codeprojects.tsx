@@ -224,8 +224,8 @@ export default function CodeProjects () {
 
     return (
         <>
-            <Para className="mt-12 mb-3 px-12 text-center text-xl font-semibold">There are some basic functions on display here, but the coolest thing is how they're integrated with the page.</Para>
-            <Para  className="mb-12 px-12 text-center text-xl font-semibold">Oh, and there's the thing linked to by the Jammming infobox. Check that out!</Para>
+            <Para className="mt-12 mb-3 px-12 text-center text-xl font-semibold">Here's a small playground for some basic functions. The page is the real attraction.</Para>
+            <Para  className="mb-12 px-12 text-center text-xl font-semibold">Also: this site displays differently depending on whether your computer is in dark mode or not. Try switching modes!</Para>
             <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 lg:mx-6">
                 <Article className="relative">
                     <Para className="text-xl font-semibold">A Caesar Cipher</Para>
