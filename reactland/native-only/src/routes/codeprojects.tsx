@@ -2,6 +2,7 @@ import { useState } from "react"
 import Para from "../components/para"
 import Article from "../components/article"
 import Button from "../components/button"
+import LinkButton from "../components/link_button"
 
 
 // Caesar cipher stuff
@@ -191,7 +192,7 @@ export default function CodeProjects () {
     }
     
     // Number formatter stuff
-    const [number,setNumber] = useState("1048596")
+    const [number,setNumber] = useState("10485.96")
 
     function formatWebNumber(){
         try {
@@ -360,6 +361,26 @@ export default function CodeProjects () {
                     </div>
                 </Article>
             </div>
+            <br />
+                <Article className="mt-6 mx-6 bg-[url('./Jammming.jpg')] bg-center">
+                    <div className="lg:w-3/4 lg:mx-auto bg-black/50 p-3 rounded-md">
+                    <Para className="text-2xl font-bold text-center mb-6">Jammming: A Full-Blown API-using React App!</Para>
+                        <Para>It was a normal Tuesday afternoon, and Evan was doing what he usually did in his afternoons back then: grind Codecademy. His goal, as usual, was to get 1% closer to completion that day.</Para>
+                        <Para className="italic">Then he ran into a 99-part practice project. Which demanded he use basically everything he had been learning over the past few sections.</Para>
+                        <Para>Not to be deterred, (I definitely did not briefly panic or anything) I sat down, named my project directory "f***ingbringit", and got to work. It was finished by 5PM Thursday. The app uses the React JavaScript library and the Spotify API to allow a user to search for songs and create playlists with them while not actually on the Spotify app. I'm really, really happy with it. Until I worked at Leanpub for a month and built actual production code, this was the coolest code thing I had done.</Para>
+                        <Para>Note: there may still be a bug or two to iron out (for instance, the first time you search the page might reload and do nothing, but the second and following times will work fine). Also, the default values are Humanity Endures in-jokes which are not actual songs, so don't try to add those to playlists.</Para>
+                        <div className="flex gap-6 w-fit mx-auto my-5">
+                                <LinkButton href="https://evancanintoreact.surge.sh/" target="_blank">View on the Web</LinkButton>
+                                <LinkButton href="https://github.com/e-p-armstrong/Jammming" target="_blank">GitHub Repo</LinkButton>
+                        </div>
+                    </div>
+                </Article>
+                <br />
+                <Article className="m-6">
+                    <Para className="text-2xl text-center">To see the latest in Evan Engineering, feel free to visit my GitHub Account!</Para>
+                    <LinkButton href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank" className="mx-auto my-6">Look on my works, ye mighty</LinkButton>
+                </Article>
+                <br />
         </>
         )
 }

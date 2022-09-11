@@ -1,5 +1,7 @@
 import { Link, Outlet } from "react-router-dom"
 import NavbarLink from "./components/navbar_link";
+import Article from "./components/article";
+import Para from "./components/para";
 
 
 
@@ -16,6 +18,12 @@ function App() {
         </nav>
       </div>
         <Outlet />
+        <Article>
+            <Para className="font-semibold">Copyright Evan Armstrong 2022</Para>
+            <Para className="dark:text-white/60 text-black/60">Contact: evanpeterarmstrong@gmail.com</Para>
+            <Para className="dark:text-white/60 text-black/60">IG: @e_p_armstrong</Para>
+            <Para>Image Credit (the depiction of the Galaxy): <a className="text-sky-200 italic underline" href="https://www.eso.org/public/">ESO/NASA/JPL-Caltech/M. Kornmesser/R. Hurt</a></Para>
+        </Article>
     </div>
   );
 }

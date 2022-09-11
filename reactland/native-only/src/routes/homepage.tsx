@@ -68,11 +68,5 @@ export default function Homepage () {
         <br />
         <br />
         <hr className="border-white/50"/>
-        <Article>
-            <Para className="font-semibold">Copyright Evan Armstrong 2022</Para>
-            <Para className="dark:text-white/60 text-black/60">Contact: evanpeterarmstrong@gmail.com</Para>
-            <Para className="dark:text-white/60 text-black/60">IG: @e_p_armstrong</Para>
-            <Para>Image Credit (the depiction of the Galaxy): <a className="text-sky-200 italic underline" href="https://www.eso.org/public/">ESO/NASA/JPL-Caltech/M. Kornmesser/R. Hurt</a></Para>
-        </Article>
     </>)
 }
