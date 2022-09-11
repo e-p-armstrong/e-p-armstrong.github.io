@@ -8,6 +8,9 @@ module.exports = {
       },
       height: {
         'half-screen': '50vh'
+      },
+      fontSize: {
+        'xxl': '5rem'
       }
     },
   },

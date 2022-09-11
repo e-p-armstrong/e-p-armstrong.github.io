@@ -7,11 +7,11 @@ export default function Homepage () {
     return (
     <>
         <div className="w-full bg-[url('/images/iconic.jpg')] bg-center bg-no-repeat flex items-center flex-col gap-3 h-half-screen">
-            <div className="w-5/6 h-1/2 bg-black/60  m-auto rounded-md flex items-center flex-wrap border-4 border-white/20">
+            <div className="w-5/6 h-1/2 bg-black/60  m-auto rounded-md flex items-center flex-wrap shadow-md">
                 <h2 className="lg:text-3xl md:text-2xl sm:text-2xl text-xl text-white  mx-auto lg:grow-0 lg:shrink-0 w-3/4 h-fit text-center font-semibold">Author, Programmer, Aspiring World-Conquerer</h2>
             </div>
         </div>
-        <div className="w-full h-fit p-5 bg-black/90 bg-center bg-no-repeat flex items-center flex-col gap-3 border-b-2 border-white/20">
+        <div className="w-full h-fit p-5 bg-neutral-900 bg-center bg-no-repeat flex items-center flex-col gap-3 shadow-lg">
             <h3 className="text-white font-bold lg:text-xl md:text-lg sm:text-base w-fit">Here, you can look at what I've done so far.</h3>
         </div>
         {/* Grid goes below this, with portfolio including "I worked at leanpub!" and "I did a bunch of codecademy!" */}
@@ -49,10 +49,8 @@ export default function Homepage () {
                 <LinkButton href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank" className="absolute bottom-3">Click me!</LinkButton>
             </Article>
         </div>
-        <div className="w-1/6 mx-auto">
-            <hr />
-        </div>
-        <Article className="mt-6 w-11/12 mx-auto">
+        <br />
+        <Article className="mt-6 w-11/12 mx-auto bg-zinc-900/30">
             <Para className="text-2xl text-center font-semibold">The Distinguished Individual of the [Arbitrary Timeframe]</Para>
             <div className="text-center mb-12">
                 <hr className="inline-block w-1/12 pb-1 mr-2"/>
@@ -62,11 +60,10 @@ export default function Homepage () {
             <div>
 
             </div>
-            <img src="./queenie.jpg" alt="The Late Queen of England, Elizabeth II" className="border-4 border-white/20 rounded-md mx-auto" />
+            <img src="./queenie.jpg" alt="The Late Queen of England, Elizabeth II" className="shadow-md rounded-md mx-auto" />
             <Para className="text-center mx-auto w-fit font-semibold text-xl mt-2">Elizabeth II. God Save the Queen.</Para>
         </Article>
         <br />
         <br />
-        <hr className="border-white/50"/>
     </>)
 }

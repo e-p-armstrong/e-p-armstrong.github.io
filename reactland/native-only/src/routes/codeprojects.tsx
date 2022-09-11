@@ -224,13 +224,13 @@ export default function CodeProjects () {
 
     return (
         <>
-            <Para className="my-6 px-12 text-center text-xl">There are some basic functions on display here, but the coolest thing is how they're integrated with the page.</Para>
-            <Para  className="my-6 px-12 text-center text-xl">Oh, and there's the thing linked to by the Jammming infobox. Check that out!</Para>
+            <Para className="mt-12 mb-3 px-12 text-center text-xl font-semibold">There are some basic functions on display here, but the coolest thing is how they're integrated with the page.</Para>
+            <Para  className="mb-12 px-12 text-center text-xl font-semibold">Oh, and there's the thing linked to by the Jammming infobox. Check that out!</Para>
             <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 lg:mx-6">
                 <Article className="relative">
                     <Para className="text-xl font-semibold">A Caesar Cipher</Para>
                     <Para>This one is pretty self-explanatory. I made a Caesar Cipher class that lets you create an object with a given shift, and this object has methods that let you encrypt and decrypt text at will. The version customized for this page lets you change the input, and handles/displays errors/bad inputs smoothly (try-catch). Try encrypting and decrypting any messages you want!</Para>
-                    <br /> <br /><br /><br /><br /><br />
+                    <br /> <br /><br /><br /><br className="lg:block hidden"/><br className="lg:block hidden"/><br className="lg:block hidden"/>
                     <div className="grid grid-cols-2 lg:block lg:space-y-3 absolute bottom-28 w-full gap-2 items-center justify-center">
                         <div>
                             <Para>Your desired shift:</Para>
