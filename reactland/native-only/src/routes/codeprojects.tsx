@@ -224,10 +224,8 @@ export default function CodeProjects () {
 
     return (
         <>
-            <div className="shadow-lg pb-6 mb-12">
-                <Para className="mt-12 mb-3 px-12 text-center text-xl font-semibold">There are some basic functions on display here, but the coolest thing is how they're integrated with the page.</Para>
-                <Para  className="px-12 text-center text-xl font-semibold">Oh, and there's the thing linked to by the Jammming infobox. Check that out!</Para>
-            </div>
+            <Para className="mt-12 mb-3 px-12 text-center text-xl font-semibold">There are some basic functions on display here, but the coolest thing is how they're integrated with the page.</Para>
+            <Para  className="mb-12 px-12 text-center text-xl font-semibold">Oh, and there's the thing linked to by the Jammming infobox. Check that out!</Para>
             <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 lg:mx-6">
                 <Article className="relative">
                     <Para className="text-xl font-semibold">A Caesar Cipher</Para>
@@ -235,7 +233,7 @@ export default function CodeProjects () {
                     <br /> <br /><br /><br /><br className="lg:block hidden"/><br className="lg:block hidden"/><br className="lg:block hidden"/>
                     <div className="grid grid-cols-2 lg:block lg:space-y-3 absolute bottom-28 w-full gap-2 items-center justify-center">
                         <div>
-                            <Para>Your shift:</Para>
+                            <Para>Your desired shift:</Para>
                             <form onSubmit={
                                 (event) => {
                                     event?.preventDefault()
@@ -246,7 +244,7 @@ export default function CodeProjects () {
                             </form>
                         </div>
                         <div>
-                            <Para>Your message:</Para>
+                            <Para>Your desired message:</Para>
                             <form onSubmit={
                                 (event) => {
                                     event?.preventDefault()
@@ -273,7 +271,7 @@ export default function CodeProjects () {
                     <br /><br /><br /><br />
                     <div className="grid grid-cols-2 lg:block lg:space-y-3 absolute bottom-28 w-full gap-2 items-center justify-center">
                         <div>
-                            <Para>Your number:</Para>
+                            <Para>Your desired number:</Para>
                             <form onSubmit={formatWebNumber}>
                                 <input type="text" value={number} className="p-1" onChange={ (event) => setNumber(event.target.value)}/>
                             </form>
@@ -329,7 +327,7 @@ export default function CodeProjects () {
                     <br /><br /><br /><br />
                     <div className="grid grid-cols-2 lg:block lg:space-y-3 absolute bottom-28 w-full gap-2 items-center justify-center">
                         <div>
-                            <Para>A credit card number:</Para>
+                            <Para>Your credit card number:</Para>
                             <form onSubmit={
                                 (event) => {
                                     event.preventDefault()
@@ -380,7 +378,7 @@ export default function CodeProjects () {
                 <br />
                 <Article className="m-6">
                     <Para className="text-2xl text-center">To see the latest in Evan Engineering, feel free to visit my GitHub Account!</Para>
-                    <LinkButton href="https://github.com/e-p-armstrong" target="_blank" className="mx-auto my-6">Look on my works, ye mighty</LinkButton>
+                    <LinkButton href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank" className="mx-auto my-6">Look on my works, ye mighty</LinkButton>
                 </Article>
                 <br />
         </>
