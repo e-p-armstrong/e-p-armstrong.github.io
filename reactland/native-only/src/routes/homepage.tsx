@@ -50,12 +50,12 @@ export default function Homepage () {
             </Article>
         </div>
         <br />
-        <Article className="mt-6 w-11/12 mx-auto bg-zinc-900/30">
+        <Article className="mt-6 w-11/12 mx-auto">
             <Para className="text-2xl text-center font-semibold">The Distinguished Individual of the [Arbitrary Timeframe]</Para>
             <div className="text-center mb-12">
-                <hr className="inline-block w-1/12 pb-1 mr-2"/>
+                <hr className="inline-block w-1/12 pb-1 mr-2 dark:border-white border-black"/>
                 <Para className="inline">Where I pick a badass of the world and honor them in my corner of the internet</Para>
-                <hr className="inline-block w-1/12 pb-1 ml-2"/>
+                <hr className="inline-block w-1/12 pb-1 ml-2 dark:border-white border-black"/>
             </div>
             <div>
 
