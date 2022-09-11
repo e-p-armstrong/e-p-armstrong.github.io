@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Capstone from './routes/capstone';
 import CodeProjects from './routes/codeprojects';
 import Slide from './routes/slide';
 import Homepage from './routes/homepage';
@@ -18,9 +17,6 @@ root.render(
     <Routes>
       <Route path="/" element={<App/>} > 
         <Route path="codeprojects" element={<CodeProjects/>} />
-        <Route path="capstone" element={<Capstone/>} > 
-          <Route path=":slideId" element={<Slide/>}/>
-        </Route>
         <Route path="/" element={<Homepage/>} />
         <Route path="*" element={<NotFound/>} />
       </Route>
