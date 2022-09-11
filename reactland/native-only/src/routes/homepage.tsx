@@ -46,7 +46,7 @@ export default function Homepage () {
                 </Para>
                 <br />
                 <br />
-                <LinkButton href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank" className="absolute bottom-3">Click me!</LinkButton>
+                <LinkButton href="https://github.com/e-p-armstrong" target="_blank" className="absolute bottom-3">Click me!</LinkButton>
             </Article>
         </div>
         <br />

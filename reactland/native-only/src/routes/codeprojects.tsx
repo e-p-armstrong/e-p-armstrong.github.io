@@ -378,7 +378,7 @@ export default function CodeProjects () {
                 <br />
                 <Article className="m-6">
                     <Para className="text-2xl text-center">To see the latest in Evan Engineering, feel free to visit my GitHub Account!</Para>
-                    <LinkButton href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank" className="mx-auto my-6">Look on my works, ye mighty</LinkButton>
+                    <LinkButton href="https://github.com/e-p-armstrong" target="_blank" className="mx-auto my-6">Look on my works, ye mighty</LinkButton>
                 </Article>
                 <br />
         </>
