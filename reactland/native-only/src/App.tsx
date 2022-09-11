@@ -16,7 +16,7 @@ function App() {
         <nav className="w-max mx-auto">
           <NavbarLink to="/">Home Page</NavbarLink> <span className="dark:text-black/60 text-white">|</span> {"  "}
           <NavbarLink to="/codeprojects">code examples</NavbarLink> <span className="dark:text-black/60 text-white">|</span> {"  "}
-          <NavbarLink to="/capstone/1">capstone</NavbarLink>
+          <a className="italic font-normal text-zinc-400 dark:text-zinc-700" href="https://old-pages-archive-evan.surge.sh/slideshow/slide1.html">Capstone</a>
         </nav>
       </div>
         <Outlet />
