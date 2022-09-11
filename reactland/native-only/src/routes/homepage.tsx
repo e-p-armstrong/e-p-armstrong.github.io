@@ -11,8 +11,8 @@ export default function Homepage () {
                 <h2 className="lg:text-3xl md:text-2xl sm:text-2xl text-xl text-white  mx-auto lg:grow-0 lg:shrink-0 w-3/4 h-fit text-center font-semibold">Author, Programmer, Aspiring World-Conquerer</h2>
             </div>
         </div>
-        <div className="w-full h-fit p-5 bg-neutral-900 bg-center bg-no-repeat flex items-center flex-col gap-3 shadow-lg">
-            <h3 className="text-white font-bold lg:text-xl md:text-lg sm:text-base w-fit">Here, you can look at what I've done so far.</h3>
+        <div className="w-full h-fit p-5 bg-neutral-900 dark:bg-zinc-700 bg-center bg-no-repeat flex items-center flex-col gap-3 shadow-lg">
+            <h3 className="text-white  font-bold lg:text-xl md:text-lg sm:text-base w-fit">Here, you can look at what I've done so far.</h3>
         </div>
         {/* Grid goes below this, with portfolio including "I worked at leanpub!" and "I did a bunch of codecademy!" */}
         <div className="grid grid-flow-row md:grid-cols-3 grid-cols-1 p-6 gap-5">

@@ -363,7 +363,7 @@ export default function CodeProjects () {
             </div>
             <br />
                 <Article className="mt-6 mx-6 bg-[url('./Jammming.jpg')] bg-center">
-                    <div className="lg:w-3/4 lg:mx-auto dark:bg-gray-100/70 bg-black/50 p-3 rounded-md">
+                    <div className="lg:w-3/4 lg:mx-auto bg-black/50 p-3 rounded-md">
                     <p className="text-2xl font-bold text-center mb-6 text-zinc-200">Jammming: A Full-Blown API-using React App!</p>
                         <p className="text-zinc-200">It was a normal Tuesday afternoon, and Evan was doing what he usually did in his afternoons back then: grind Codecademy. His goal, as usual, was to get 1% closer to completion that day.</p>
                         <p className="italic text-zinc-200">Then he ran into a 99-part practice project. Which demanded he use basically everything he had been learning over the past few sections.</p>
