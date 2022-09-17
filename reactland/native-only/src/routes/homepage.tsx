@@ -1,6 +1,7 @@
 import Article from "../components/article"
 import Para from "../components/para"
 import LinkButton from "../components/link_button"
+import Anchor from "../components/anchor"
 
 
 export default function Homepage () {
@@ -36,7 +37,7 @@ export default function Homepage () {
                     Coding Projects
                 </Para>
                 <Para>
-                    I've been learning to code on-and-off for much of my life, and I've been truly committed to it ever since I finished my book. From learning some Haskell (by completing roughly half of the <a className="text-sky-200 italic underline" target="_blank" rel="noreferrer" href="https://haskellbook.com/">Haskellbook</a>) to Python with <a className="text-sky-200 italic underline" target="_blank" rel="noreferrer" href="https://learnpythonthehardway.org/python3/">Learn Python the Hard Way</a> to Codecademy's "Full Stack Engineer" course, I've a fair bit of educational stuff. And the moment I learned how to GitHub I started putting everything I made there. Right now most of the projects are metaphorical peanuts, but there are a few cool things, like a React app that uses the Spotify API to build playlists. And as time goes on, I will build more things.
+                    I've been learning to code on-and-off for much of my life, and I've been truly committed to it ever since I finished my book. From learning some Haskell (by completing roughly half of the <Anchor href="https://haskellbook.com/">Haskellbook</Anchor>) to Python with <Anchor href="https://learnpythonthehardway.org/python3/">Learn Python the Hard Way</Anchor> to Codecademy's "Full Stack Engineer" course, I've a fair bit of educational stuff. And the moment I learned how to GitHub I started putting everything I made there. Right now most of the projects are metaphorical peanuts, but there are a few cool things, like a React app that uses the Spotify API to build playlists. And as time goes on, I will build more things.
                 </Para>
                 <Para>
                     Right now, most things are either small functions that I quickly hacked together to answer real-world questions, or stuff I built after being prompted to do so by various code books or courses.
