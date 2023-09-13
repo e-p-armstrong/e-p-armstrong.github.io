@@ -13,7 +13,7 @@ export default function Homepage () {
             </div>
         </div> */}
         <div className="w-full h-[80vh] bg-black/80 relative shadow-xl "> {/* Tints the video */}
-                <video className="w-full h-[80vh] object-fit hidden md:block" src="video/gh_video_centered_text.mp4" autoPlay={true} muted loop/>
+                <video className="w-full h-[80vh] object-fit hidden md:block" src="video/gh_video_typo_fix.mp4" autoPlay={true} muted loop/>
                 <img src="./iconic.jpg" className="w-full h-[80vh] object-cover md:hidden" alt="Artist's impression of the central bulge of the Milky Way" />
                 <div className="absolute -translate-x-1/2 top-1/2 left-1/2 z-10 text-white text-center text-5xl font-semibold bg-black bg-opacity-30 p-3">
                     Hacker. AI Developer. Author.
