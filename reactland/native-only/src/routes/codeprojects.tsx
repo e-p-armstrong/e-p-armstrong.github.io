@@ -10,30 +10,33 @@ export default function CodeProjects () {
         <><br />
             <div className="grid grid-cols-1 gap-6 lg:mx-6">
                 <Article className="relative">
-                    <Para className="text-3xl font-semibold">Llama 2 LoRA Finetune: Amadeus</Para>
-                    <Para>blah blah demo</Para>
-                    <Para>I have since refactored and improved this, and it's coherent and consistent most of the time now. Find the training code here: </Para>
-                    <Para>And the model files (ggml, not gguf yet) here:</Para>
+                    <Para className="text-3xl font-semibold">Llama 2 LoRA Finetune: MythoMakise</Para>
+                    <Para>My most impressive model fine-tuning so far, this Llama 2 LoRA (trained on top of the popular Llama 2 merge, MythoMax) allows for a chatbot that authentically recreates the speaking style of a character from the narrative-heavy game "Steins;Gate". Immense work went into the dataset of this model: instead of using isolated pairs of dialogue, I made a custom algorithm to group conversations that were useful as training data;  I used GPT-4 to generate "scenarios" that described each scene, to give the model context on what kind of scene it was acting in; finally, every single conversation was rewritten by GPT-4 to include characters' *actions*, without which some dialogue simply didn't make sense. All of these changes were then formatted into "character cards" to create a dataset of over 1300 high-quality training examples. All this iterative work was done under the principle that a task has to fundamentally make sense for a model to be able to do it well—a principle I believe is somewhat validated by the dramatic increase in quality each change brought.</Para>
+                    <Para>You can see a demo of an alpha version of the model below, on YouTube; I have since refactored and improved the model from its state, and it's coherent and consistent most of the time now. Find the training code here: <a href="https://github.com/e-p-armstrong/amadeus" className="italic text-cyan-200 underline">https://github.com/e-p-armstrong/amadeus</a></Para>
+                    <Para>The model files (ggml q4_km quants) here: <a href="https://huggingface.co/Heralax/MythoMakise-13b-quants" className="italic text-cyan-200 underline">https://huggingface.co/Heralax/MythoMakise-13b-quants</a></Para>
+                    <Para>
+                        And the LoRA adapters here: <a href="https://huggingface.co/Heralax/MythoMakise-13b-adapters" className="italic text-cyan-200 underline">https://huggingface.co/Heralax/MythoMakise-13b-adapters</a>
+                    </Para>
                     <br /> <br />
                     <iframe className="lg:w-1/2 h-96 w-full" src="https://www.youtube.com/embed/JS8Gpsp5Dn0?si=dvXCG3FJu27ONMVY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </Article>
                 <Article className="relative">
                     <Para className="text-3xl font-semibold">BLOOMZ-3b LoRA Finetune: Document Title Writer</Para>
-                    <Para>blah blah demo</Para>
+                    <Para>In the days of yore, I set up a keyboard shortcut on my Mac that would create and open a text file — as a way of taking quick notes. However, the majority of these notes lack actual filenames, making it difficult to search through them and find information — effectively rendering many of the notes useless as information storage. When I finally figured out how to fine-tune LLMs, this problem seemed, to me, the perfect thing to solve as a first practical project. Using the personal notes of mine that *do* have titles as training data, I was able to fine-tune BLOOMZ-3b on my linux machine, using the TRL and bitsandbytes libraries, to be a decent document title writer. This was not a full finetune, but a LoRA.</Para>
+                    <Para>At some point I intend to make a version with FLAN T5, because the license and model both seem much better.</Para>
+                    <Para>You can see a screenshot of the model in action below.</Para>
                     <img src="./bloomz.jpg" alt=""  className="lg:w-1/2 w-full"/>
+                    <Para>Training code is private because the training data is my PERSONAL notes.</Para>
+                    <Para>Model files: 
+                        <a href="https://huggingface.co/Heralax/bloomz-3b-document-title-writer" className="italic text-cyan-200 underline">https://huggingface.co/Heralax/bloomz-3b-document-title-writer</a>
+                    </Para>
                 </Article>
                 <Article className="relative">
                     <Para className="text-3xl font-semibold">Llama 2 LoRA Finetune: Chizuru AI</Para>
-                    <Para>blah blah demo</Para>
-                    <Para></Para>
+                    <Para>Before MythoMakise, there was this. A model inspired by an even more esoteric video game, whose data I scraped manually across multiple days using textractor; and a model for which I originally developed the first (slightly broken) version of my conversation-grouping algorithm. If you've read the bit about MythoMakise, there's not much more to say about this one other than it's older, worse, and I built a simple Tkinter interface for it because I didn't know that SillyTavern existed and had expression support. The version in a video isn't even a 13b, it's a 7b finetuned on MythoLogic-Mini-7b (by Gryphe).</Para>
+                    <Para>Technical details for the interested: 7b LoRA finetuned on a single A100 GPU using TRL, bitsandbytes, and the Hugging Face Trainer API. The A100 was rented out with vast.ai. I use Trainer for my models because I find it gives the best balance of control (hyperparameter tuning) with up-to-date-ness for my needs.</Para>
+                    <Para>Model files link: <a href="https://huggingface.co/Heralax/MythoChizuru-Mini-7b-GGML" className="italic text-cyan-200 underline">https://huggingface.co/Heralax/MythoChizuru-Mini-7b-GGML</a></Para>
                     <iframe className="lg:w-1/2 h-96 w-full"  src="https://www.youtube.com/embed/wQg_KwZ9iAU?si=TVa4XPGQZjw3DR34" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                </Article>
-                <Article className="relative">
-                    <Para className="text-3xl font-semibold">I've also done a bunch of full stack work for Leanpub</Para>
-                    <Para className="text-xl">(I'm not just capable of AI)</Para>
-                    <Para>But this doesn't really count as a "code example" since I can't share it—because the code belongs to Leanpub. </Para>
-                    <Para>I'm just leaving this note here so that you don't think I can only do AI. I just really like AI, is all.</Para>
-                    <img src="" alt="" />
                 </Article>
             </div>
             <br />

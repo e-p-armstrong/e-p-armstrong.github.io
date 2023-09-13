@@ -13,7 +13,7 @@ export default function Homepage () {
             </div>
         </div> */}
         <div className="w-full h-[80vh] bg-black/80 relative shadow-xl "> {/* Tints the video */}
-                <video className="w-full h-[80vh] object-cover hidden md:block" src="video/gh_video_text_centered.mp4" autoPlay={true} muted loop/> {/* Test image curtesy of Video by kinchan_kinchan from https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=103888" Pixabay */}
+                <video className="w-full h-[80vh] object-cover hidden md:block" src="video/gh_video_pacing_fix.mp4" autoPlay={true} muted loop/>
                 <img src="./iconic.jpg" className="w-full h-[80vh] object-cover md:hidden" alt="Artist's impression of the central bulge of the Milky Way" />
                 <div className="absolute -translate-x-1/2 top-1/2 left-1/2 z-10 text-white text-center text-5xl font-semibold bg-black bg-opacity-30 p-3">
                     Hacker. Machine Learner. Author.
@@ -25,36 +25,33 @@ export default function Homepage () {
         {/* Grid goes below this, with portfolio including "I worked at leanpub!" and "I did a bunch of codecademy!" */}
         <div className="grid grid-flow-row md:grid-cols-3 grid-cols-1 p-6 gap-5">
             <Article className="relative">
+                <Para className="text-xl font-semibold">
+                    AI Projects
+                </Para>
+                <Para>
+                    I've been getting better at programming for years now, but what I'm most proud of is that in the last 12 months I've gotten really good at AI. In addition to my growing number of practical, self-initiated projects in the field, I've also completed a good number of online courses on the subject, ranging from the theoretical (Imperial College Linear Algebra Course) to the practical (Coursera Machine Learning Specialization). Right now I'm working on fine-tuning Llama 2 (the open-source competitor to GPT) to match the writing style/tone of fictional characters, and even real people.
+                </Para>
+                <Para>
+                    Click the button below to see my Hugging Face account! (Hugging Face is basically GitHub for AI models)
+                </Para>
+                <br />
+                <br />
+                <LinkButton href="https://huggingface.co/Heralax" target="_blank" className="absolute bottom-3">Click me!</LinkButton>
+            </Article>
+            <Article className="relative">
                 <Para className="text-xl font-semibold">Humanity Endures</Para>
-                <Para>I'm an author! Once upon a time I was bored, and so I decided to spend the next three years of my life writing a 300,000-word science fiction book. And you know what, I don't think it <i>completely</i> sucks either! Should you have a few weeks to spare you might want to give it a read. (And to answer the inevitable question, I am actually planning another one now. It will take a while though.)</Para>
-                <Para>Click on the button below to see its Amazon page:</Para>
+                <Para>Fun fact: I'm also the author of a 300,000-word science fiction novel. I started the project when I was very young in order to get more familiar with shipping large projects, and because I thought I was decent at writing. It took three years to complete, and despite its flaws, I'm proud of it. No, I don't have time to write a sequel right now, and yes, that means the cliffhanger will be unresolved for at least a decade. Sorry.</Para>
+                <Para>Click on the button below to see its Amazon page (if you like unanswered questions):</Para>
                 {/* The below brs are a hack to make the button not display inside the text on medium screen sizes */}
                 <br className="md:hidden"/>
                 <br className="md:hidden"/>
                 <LinkButton href="https://www.amazon.ca/Humanity-Endures-Evan-Armstrong-ebook/dp/B08CTS49SJ" target="_blank" className="absolute bottom-3">Click me!</LinkButton>
             </Article>
             <Article className="relative">
-                <Para className="text-xl font-semibold">Programming Internship</Para>
-                <Para>I have practical experience. Beyond just learning how to code with various online tools and offline books, I have worked for over a month writing production React/Remix, GraphQL, and Ruby code for Leanpub, a site which makes it easier for authors to self-publish books. I was assigned to build the new author app for the next version of the site. Over the course of my work term I wrote thousands of lines of production code, merged dozens of PRs, and collaborated with an excellent team in building a real-world product.</Para>
+                <Para className="text-xl font-semibold">Programming Job Experience</Para>
+                <Para>This is the obligatory "I'm not a complete newb" section. I have worked for two summers at Leanpub (an online ebook self-publishing platform). The first summer was as a mainly frontend developer, and the second was as an AI specialist (and occasional fullstack developer). I've done the prompt engineering for four AI services (powered by GPT-4); I've worked with AWS lambdas and OpenAI API code; I've written more React/Remix forms than I care to remember; and I've even used GraphQL and Rails. I've worked with an excellent team, I've worked with real code, and I've already made a lot of the annoying mistakes that new employees make, so you won't have to worry about many of those if you're thinking of hiring me.</Para>
 
-                <Para>(disclaimer: Leanpub is my Dad's company, but connections or not, I definitely pulled my weight and earned my keep)</Para>
-            </Article>
-            <Article className="relative">
-                <Para className="text-xl font-semibold">
-                    Coding Projects
-                </Para>
-                <Para>
-                    I've been learning to code on-and-off for much of my life, and I've been truly committed to it ever since I finished my book. From learning some Haskell (by completing roughly half of the <Anchor href="https://haskellbook.com/">Haskellbook</Anchor>) to Python with <Anchor href="https://learnpythonthehardway.org/python3/">Learn Python the Hard Way</Anchor> to Codecademy's "Full Stack Engineer" course, I've a fair bit of educational stuff. And the moment I learned how to GitHub I started putting everything I made there. Right now most of the projects are metaphorical peanuts, but there are a few cool things, like a React app that uses the Spotify API to build playlists. And as time goes on, I will build more things.
-                </Para>
-                <Para>
-                    Right now, most things are either small functions that I quickly hacked together to answer real-world questions, or stuff I built after being prompted to do so by various code books or courses.
-                </Para>
-                <Para>
-                    Click the button below to see my GitHub!
-                </Para>
-                <br />
-                <br />
-                <LinkButton href="https://github.com/e-p-armstrong" target="_blank" className="absolute bottom-3">Click me!</LinkButton>
+                <Para>(full disclosure: Leanpub is my Dad's company, but I definitely pulled my weight and earned my keep. I would not have been hired a second time otherwise.)</Para>
             </Article>
         </div>
         <br />
